@@ -20,12 +20,14 @@
     </nav>
     <div>
         <div class="name">
+          Time is now <span id="time"></span>
          <p class="int">Hi There!</p>
          <p class="brief">I AM AYUSH</p>
          <!-- <p class="jack">A Backend Web Developer</p> -->
          <span id="element"></span>
          <p class="detail">I am curious to know more about Web Developement and exploring the Ethical Hacking</p>
          <img class="image" src="/profile.png" alt="Profile picture" >
+         
 
 
         </div>
@@ -78,7 +80,7 @@
            
 
         </div> 
-        <div class="Foot">Designed By </div>
+        <div class="Foot"></div>
             </div>
            
 
@@ -93,6 +95,14 @@
           strings: ['App Developer', 'Web Developer'],
           typeSpeed: 50,
         });
+
+        function displaytime(){
+          time = new Date();
+          console.log(time);
+          document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(displaytime,1000)
       </script>
 </body>
 </html>
