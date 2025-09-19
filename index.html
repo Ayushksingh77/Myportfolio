@@ -4,105 +4,324 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
-    <title>Ayush</title>
+    <meta name="description" content="Ayush Kumar Singh - Web Developer & App Developer Portfolio">
+    <meta name="keywords" content="web developer, app developer, portfolio, Ayush Kumar Singh">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ayush Kumar Singh - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
-    <nav>
-        <p>Home</p>
-        <h2>Ayush Kumar Singh</h2>
-        <p>About us</p>
-        <p>My Skills</p>
-        <p>Contact me</p>
-    </nav>
-    <div>
-        <div class="name">
-          Time is now <span id="time"></span>
-         <p class="int">Hi There!</p>
-         <p class="brief">I AM AYUSH</p>
-         <!-- <p class="jack">A Backend Web Developer</p> -->
-         <span id="element"></span>
-         <p class="detail">I am curious to know more about Web Developement and exploring the Ethical Hacking</p>
-         <img class="image" src="/profile.png" alt="Profile picture" >
-         
-
-
-        </div>
-        <div class="insta">
-        <a href="https://www.instagram.com">
-            <img  src="/Instagram-Logo.wine.png" alt="My instagram id">
-        </a>
-         </div>
-         <div  class="btn">
-            <a href="myresume.txt" target="_blank">
-                <button class="btn">Download Myresume</button></a>
-                <a href="/contact.html">
-                <button class="btn">Contact me </button></a>
-        </div>
-        <div>
-            <div class="about">
-                <p id="me">About Me </p>
-                <p>I am currently a student of Ajay Kumar Garg Engineering College pursing a B.tech degree in Information Technology</p>
-                <p>I am passionate in learning an Ethical Hacking,Web Developement and Java Language
-                </p>
-               
-
-                <img id="avot" src="/about me.png" alt="jutsu" >
-                <p id="logo">
-                
-                <img  src="/html.png" alt="nothing">
-                <img src="/Css.png" alt="">
-                <img src="/javascript.png" alt="">
-                <p> I am very talent boy. I am pursing B.tech from Ajay Kumar Garg Engineering College.<br><sub>Developing my portfolio for better understanding of Web development and build future</sub> </p>
-
-            </p>
-            <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                
-                <div class="progress-bar bg-success" style="width: 75%">Html   75%</div>
-              </div>
-              <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-info text-dark" style="width: 50%">Css   50%</div>
-              </div>
-              <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-warning text-dark" style="width: 65%">javascript   65%</div>
-              </div>
-              <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-bar bg-danger" style="width: 100%">100%</div>
-              </div>
-              <div>
-           <h2>Contact Me</h2> 
-           <p class="about">Email Id:  Ayush2113058@akgec.ac.in</p>
-           <p class="about">Phone Number: 9453107248</p>
-           
-           
-
-        </div> 
-        <div class="Foot"></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Ayush Kumar Singh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-           
-
         </div>
-        
-        
-    </div>
-    
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <div class="time-display">
+                            <i class="fas fa-clock"></i>
+                            <span id="time"></span>
+                        </div>
+                        <h1 class="hero-greeting">Hi There! 👋</h1>
+                        <h2 class="hero-name">I'm Ayush Kumar Singh</h2>
+                        <div class="hero-title">
+                            <span id="element"></span>
+                        </div>
+                        <p class="hero-description">
+                          I’m a Full Stack Developer skilled in React.js, Next.js, JavaScript, and MongoDB, with a focus on building fast, responsive, and user-friendly web applications. I enjoy solving real-world problems through clean, scalable code and continually learning new technologies to improve user experience and performance.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary btn-lg me-3">
+                                <i class="fas fa-envelope"></i> Contact Me
+                            </a>
+                            <a href="#" class="btn btn-outline-primary btn-lg" id="downloadResume">
+                                <i class="fas fa-download"></i> Download Resume
+                            </a>
+                        </div>
+                        <div class="social-links">
+                            
+                            <a href="https://github.com" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="profile.png" alt="Ayush Kumar Singh" class="profile-image">
+                            <div class="floating-card">
+                                <i class="fas fa-code"></i>
+                                <span>Software Developer</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3>Who I Am</h3>
+                        <p>
+                          I’m an enthusiastic developer with a strong interest in building impactful digital solutions. With a problem-solving mindset and a passion for clean code, I enjoy turning complex ideas into simple, effective user experiences.
+                        </p>
+                       
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <h4>0-1</h4>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>10+</h4>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>8+</h4>
+                                <p>Technologies</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <img src="about me.png" alt="About Me" class="about-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="skills-content">
+                        <h3>Technical Skills</h3>
+                        <p>I've been working with various technologies and frameworks to create amazing digital experiences.</p>
+                        
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <img src="html.png" alt="HTML" class="skill-icon">
+                                <span class="skill-name">HTML5</span>
+                                
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <img src="Css.png" alt="CSS" class="skill-icon">
+                                <span class="skill-name">CSS3</span>
+                                
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <img src="javascript.png" alt="JavaScript" class="skill-icon">
+                                <span class="skill-name">JavaScript</span>
+                               
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 65%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <img src="java.png" alt="Java" class="skill-icon">
+                                <span class="skill-name">Java</span>
+                                
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="skills-visual">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <i class="fas fa-code"></i>
+                                <h4>Web Development</h4>
+                                <p>Creating responsive and dynamic websites</p>
+                            </div>
+                            <div class="skill-card">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>App Development</h4>
+                                <p>Building mobile applications</p>
+                            </div>
+                            
+                            <div class="skill-card">
+                                <i class="fas fa-database"></i>
+                                <h4>Database Design</h4>
+                                <p>Structuring and managing data</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>Ayusharon209@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 9129966532</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Ghaziabad, Uttar Pradesh, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content">
+                        <p>&copy; 2024 Ayush Kumar Singh. All rights reserved.</p>
+                        <div class="footer-social">
+                            
+                            <a href="https://github.com" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['App Developer', 'Web Developer'],
-          typeSpeed: 50,
-        });
-
-        function displaytime(){
-          time = new Date();
-          console.log(time);
-          document.getElementById('time').innerHTML = time;
-        }
-
-        setInterval(displaytime,1000)
-      </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
