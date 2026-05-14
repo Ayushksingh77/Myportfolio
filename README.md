@@ -116,14 +116,7 @@ The website is fully responsive and optimized for:
 - Update `script.js` for functionality changes
 - Add new images to the project folder
 
-## 📧 Contact Information
 
-- **Email**: Ayush2113058@akgec.ac.in
-- **Phone**: +91 9453107248
-- **Location**: Ajay Kumar Garg Engineering College, Ghaziabad
-- **Instagram**: [@ayush_kumar_singh](https://www.instagram.com)
-- **GitHub**: [ayush-kumar-singh](https://github.com)
-- **LinkedIn**: [ayush-kumar-singh](https://linkedin.com)
 
 ## 🎯 Future Enhancements
 
