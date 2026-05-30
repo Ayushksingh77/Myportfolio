@@ -28,17 +28,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Background Decorative Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#home">Ayush Kumar Singh</a>
+        <a class="navbar-brand" href="#home">AYUSH.DEV</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"
+            ><i class="fas fa-bars text-white"></i
+          ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
@@ -50,6 +56,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -64,37 +73,35 @@
       <div class="container">
         <div class="row align-items-center min-vh-100">
           <div class="col-lg-6">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-right">
               <div class="time-display">
                 <i class="fas fa-clock"></i>
                 <span id="time"></span>
+                <span class="ms-2">| Available for Work</span>
               </div>
-              <h1 class="hero-greeting">Hi There! 👋</h1>
-              <h2 class="hero-name">I'm Ayush Kumar Singh</h2>
+              <h4 class="hero-greeting">CREATIVE DEVELOPER</h4>
+              <h1 class="hero-name">Ayush Kumar Singh</h1>
               <div class="hero-title">
                 <span id="element"></span>
               </div>
               <p class="hero-description">
-                I’m a Full Stack Developer skilled in React.js, Next.js,
-                JavaScript, and MongoDB, with a focus on building fast,
-                responsive, and user-friendly web applications. I enjoy solving
-                real-world problems through clean, scalable code and continually
-                learning new technologies to improve user experience and
-                performance.
+                Crafting immersive digital experiences through clean code and
+                modern design. Specialized in building high-performance
+                full-stack applications with modern web technologies.
               </p>
               <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary btn-lg me-3">
-                  <i class="fas fa-envelope"></i> Contact Me
+                <a href="#projects" class="btn btn-primary btn-lg me-3">
+                  View Work <i class="fas fa-arrow-right ms-2"></i>
                 </a>
                 <a
                   href="#"
                   class="btn btn-outline-primary btn-lg"
                   id="downloadResume"
                 >
-                  <i class="fas fa-download"></i> Download Resume
+                  Resume <i class="fas fa-download ms-2"></i>
                 </a>
               </div>
-              <div class="social-links">
+              <div class="social-links mt-4">
                 <a
                   href="https://github.com"
                   target="_blank"
@@ -113,16 +120,20 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="hero-image">
+            <div class="hero-image" data-aos="zoom-in">
               <div class="image-container">
                 <img
                   src="images/profile.png"
                   alt="Ayush Kumar Singh"
                   class="profile-image"
                 />
-                <div class="floating-card">
-                  <i class="fas fa-code"></i>
-                  <span>Software Developer</span>
+                <div class="floating-card" style="top: 10%; right: -5%">
+                  <i class="fas fa-rocket text-primary"></i>
+                  <span>Fast Performance</span>
+                </div>
+                <div class="floating-card" style="bottom: 15%; left: -10%">
+                  <i class="fas fa-mobile-alt text-secondary"></i>
+                  <span>Responsive Design</span>
                 </div>
               </div>
             </div>
@@ -140,41 +151,49 @@
     <section id="about" class="about-section">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <h2 class="section-title">About Me</h2>
+          <div class="col-12" data-aos="fade-up">
+            <h2 class="section-title">The Story So Far</h2>
             <div class="section-divider"></div>
           </div>
         </div>
         <div class="row align-items-center">
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-right">
             <div class="about-content">
-              <h3>Who I Am</h3>
+              <h3 class="text-white mb-4">A Passion for Problem Solving</h3>
               <p>
-                I’m an enthusiastic developer with a strong interest in building
-                impactful digital solutions. With a problem-solving mindset and
-                a passion for clean code, I enjoy turning complex ideas into
-                simple, effective user experiences.
+                I am a dedicated Full Stack Developer with a deep-seated passion
+                for creating seamless digital solutions. My journey in tech is
+                driven by curiosity and a commitment to excellence.
+              </p>
+              <p>
+                Whether it's architecting complex backends or polishing subtle
+                UI interactions, I thrive on the challenge of bringing ideas to
+                life.
               </p>
 
               <div class="about-stats">
                 <div class="stat-item">
                   <h4>1+</h4>
-                  <p>Years Experience</p>
+                  <p>Years</p>
+                </div>
+                <div class="stat-item">
+                  <h4>15+</h4>
+                  <p>Projects</p>
                 </div>
                 <div class="stat-item">
                   <h4>10+</h4>
-                  <p>Projects Completed</p>
-                </div>
-                <div class="stat-item">
-                  <h4>8+</h4>
-                  <p>Technologies</p>
+                  <p>Tools</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-left">
             <div class="about-image">
-              <img src="images/about me.png" alt="About Me" class="about-img" />
+              <img
+                src="images/about me.png"
+                alt="About Me"
+                class="profile-image"
+              />
             </div>
           </div>
         </div>
@@ -185,24 +204,31 @@
     <section id="skills" class="skills-section">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <h2 class="section-title">My Skills</h2>
+          <div class="col-12" data-aos="fade-up">
+            <h2 class="section-title">Technical Mastery</h2>
             <div class="section-divider"></div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-right">
             <div class="skills-content">
-              <h3>Technical Skills</h3>
-              <p>
-                I've been working with various technologies and frameworks to
-                create amazing digital experiences.
+              <h3 class="text-white mb-4">Core Technologies</h3>
+              <p class="mb-5">
+                My toolkit is built on modern, reliable technologies that allow
+                for scaling and high performance.
               </p>
 
               <div class="skill-item">
                 <div class="skill-header">
-                  <img src="images/react.png" alt="React.js" class="skill-icon" />
-                  <span class="skill-name">React.js</span>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="images/react.png"
+                      alt="React.js"
+                      class="skill-icon me-3"
+                    />
+                    <span class="skill-name">React.js / Next.js</span>
+                  </div>
+                  <span class="text-primary">85%</span>
                 </div>
                 <div class="progress">
                   <div class="progress-bar" style="width: 85%"></div>
@@ -211,8 +237,15 @@
 
               <div class="skill-item">
                 <div class="skill-header">
-                  <img src="images/express.png" alt="Express.js" class="skill-icon" />
-                  <span class="skill-name">Express.js</span>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="images/express.png"
+                      alt="Express.js"
+                      class="skill-icon me-3"
+                    />
+                    <span class="skill-name">Node.js / Express</span>
+                  </div>
+                  <span class="text-secondary">75%</span>
                 </div>
                 <div class="progress">
                   <div class="progress-bar" style="width: 75%"></div>
@@ -221,12 +254,15 @@
 
               <div class="skill-item">
                 <div class="skill-header">
-                  <img
-                    src="images/typescript.png"
-                    alt="TypeScript"
-                    class="skill-icon"
-                  />
-                  <span class="skill-name">TypeScript</span>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="images/typescript.png"
+                      alt="TypeScript"
+                      class="skill-icon me-3"
+                    />
+                    <span class="skill-name">TypeScript</span>
+                  </div>
+                  <span class="text-accent">80%</span>
                 </div>
                 <div class="progress">
                   <div class="progress-bar" style="width: 80%"></div>
@@ -235,8 +271,15 @@
 
               <div class="skill-item">
                 <div class="skill-header">
-                  <img src="images/mongodb.png" alt="MongoDB" class="skill-icon" />
-                  <span class="skill-name">MongoDB</span>
+                  <div class="d-flex align-items-center">
+                    <img
+                      src="images/mongodb.png"
+                      alt="MongoDB"
+                      class="skill-icon me-3"
+                    />
+                    <span class="skill-name">MongoDB / SQL</span>
+                  </div>
+                  <span class="text-primary">70%</span>
                 </div>
                 <div class="progress">
                   <div class="progress-bar" style="width: 70%"></div>
@@ -244,26 +287,93 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6" data-aos="fade-left">
             <div class="skills-visual">
               <div class="skills-grid">
                 <div class="skill-card">
-                  <i class="fas fa-code"></i>
-                  <h4>Web Development</h4>
-                  <p>Creating responsive and dynamic websites</p>
+                  <i class="fas fa-laptop-code"></i>
+                  <h4 class="text-white">Frontend Architecture</h4>
+                  <p>
+                    State management, UI optimization, and pixel-perfect design.
+                  </p>
                 </div>
                 <div class="skill-card">
-                  <i class="fas fa-mobile-alt"></i>
-                  <h4>App Development</h4>
-                  <p>Building mobile applications</p>
+                  <i class="fas fa-server"></i>
+                  <h4 class="text-white">Backend Systems</h4>
+                  <p>RESTful APIs, Authentication, and Database scalability.</p>
                 </div>
-
                 <div class="skill-card">
-                  <i class="fas fa-database"></i>
-                  <h4>Database Design</h4>
-                  <p>Structuring and managing data</p>
+                  <i class="fas fa-shield-alt"></i>
+                  <h4 class="text-white">Cyber Security</h4>
+                  <p>
+                    Implementing security best practices and data protection.
+                  </p>
+                </div>
+                <div class="skill-card">
+                  <i class="fas fa-cloud-upload-alt"></i>
+                  <h4 class="text-white">DevOps & Cloud</h4>
+                  <p>Deployment, CI/CD pipelines, and cloud infrastructure.</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" data-aos="fade-up">
+            <h2 class="section-title">Featured Works</h2>
+            <div class="section-divider"></div>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skill-card">
+              <i class="fas fa-shopping-cart mb-4"></i>
+              <h4 class="text-white mb-3">E-Commerce Platform</h4>
+              <p class="mb-4">
+                A full-stack marketplace with Stripe integration and real-time
+                inventory.
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Case Study</a>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="skill-card">
+              <i class="fas fa-tasks mb-4"></i>
+              <h4 class="text-white mb-3">Task Management AI</h4>
+              <p class="mb-4">
+                Smart productivity tool with AI-driven task prioritization and
+                analytics.
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Case Study</a>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="skill-card">
+              <i class="fas fa-network-wired mb-4"></i>
+              <h4 class="text-white mb-3">Social Network API</h4>
+              <p class="mb-4">
+                Highly scalable backend architecture for social media
+                interactions.
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm">Case Study</a>
             </div>
           </div>
         </div>
@@ -274,18 +384,18 @@
     <section id="contact" class="contact-section">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <h2 class="section-title">Get In Touch</h2>
+          <div class="col-12" data-aos="fade-up">
+            <h2 class="section-title">Let's Collaborate</h2>
             <div class="section-divider"></div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-5" data-aos="fade-right">
             <div class="contact-info">
-              <h3>Let's Connect</h3>
-              <p>
-                I'm always open to discussing new projects, creative ideas, or
-                opportunities to be part of your visions.
+              <h3 class="text-white mb-4">Ready to start?</h3>
+              <p class="mb-5">
+                Whether you have a question or just want to say hi, my inbox is
+                always open.
               </p>
 
               <div class="contact-item">
@@ -293,18 +403,8 @@
                   <i class="fas fa-envelope"></i>
                 </div>
                 <div class="contact-details">
-                  <h4>Email</h4>
+                  <h4 class="text-white">Email</h4>
                   <p>Ayusharon209@gmail.com</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-phone"></i>
-                </div>
-                <div class="contact-details">
-                  <h4>Phone</h4>
-                  <p>+91 9129966532</p>
                 </div>
               </div>
 
@@ -313,32 +413,34 @@
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
                 <div class="contact-details">
-                  <h4>Location</h4>
-                  <p>Ghaziabad, Uttar Pradesh, India</p>
+                  <h4 class="text-white">Location</h4>
+                  <p>Ghaziabad, India</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-7" data-aos="fade-left">
             <div class="contact-form">
               <form id="contactForm">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Your Name"
-                    required
-                  />
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
                 </div>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Your Email"
-                    required
-                  />
-                </div>
-                <div class="form-group">
+                <div class="mb-3">
                   <input
                     type="text"
                     class="form-control"
@@ -346,16 +448,16 @@
                     required
                   />
                 </div>
-                <div class="form-group">
+                <div class="mb-4">
                   <textarea
                     class="form-control"
                     rows="5"
-                    placeholder="Your Message"
+                    placeholder="Message"
                     required
                   ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg">
-                  <i class="fas fa-paper-plane"></i> Send Message
+                <button type="submit" class="btn btn-primary w-100">
+                  Send Message <i class="fas fa-paper-plane ms-2"></i>
                 </button>
               </form>
             </div>
@@ -367,18 +469,24 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="footer-content">
-              <p>&copy; 2024 Ayush Kumar Singh. All rights reserved.</p>
-              <div class="footer-social">
-                <a href="https://github.com" target="_blank">
-                  <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com" target="_blank">
-                  <i class="fab fa-linkedin"></i>
-                </a>
-              </div>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0 text-dim">
+              &copy; 2024 Ayush Kumar Singh. Crafting with Precision.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="d-inline-flex gap-3 mt-3 mt-md-0">
+              <a href="https://github.com" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -390,5 +498,12 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
+    </script>
   </body>
 </html>
