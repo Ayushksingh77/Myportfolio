@@ -3,7 +3,6 @@ const typed = new Typed("#element", {
   strings: [
     "Full Stack Developer",
     "Creative Problem Solver",
-    "UI/UX Enthusiast",
     "MERN Stack Specialist",
   ],
   typeSpeed: 60,
@@ -132,7 +131,6 @@ function showNotification(message, type) {
 const resumeBtn = document.getElementById("downloadResume");
 if (resumeBtn) {
   resumeBtn.addEventListener("click", (e) => {
-    e.preventDefault();
     showNotification("Preparing your download...", "info");
   });
 }
