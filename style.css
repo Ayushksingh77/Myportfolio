@@ -87,6 +87,7 @@ body {
 /* Navigation */
 .navbar {
   background: var(--bg-nav);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--glass-border);
   padding: 1.2rem 0;
@@ -99,6 +100,7 @@ body {
   letter-spacing: -0.5px;
   background: var(--gradient-main);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -133,7 +135,7 @@ body {
 
 /* Hero Section */
 .hero-section {
-  min-vh: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -143,6 +145,7 @@ body {
 .time-display {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--glass-border);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   padding: 0.6rem 1.2rem;
   border-radius: 30px;
@@ -169,6 +172,7 @@ body {
   margin-bottom: 1.5rem;
   background: linear-gradient(to right, #fff, #94a3b8);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -267,6 +271,7 @@ body {
 
 .floating-card {
   background: var(--bg-card);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   padding: 1rem 1.5rem;
@@ -289,9 +294,19 @@ body {
   }
 }
 
+.floating-card-top-right {
+  top: 10%;
+  right: -5%;
+}
+
+.floating-card-bottom-left {
+  bottom: 15%;
+  left: -10%;
+}
+
 /* Sections */
 section {
-  padding: 10rem 0;
+  padding: 3rem 0;
 }
 
 .section-title {
@@ -301,6 +316,7 @@ section {
   margin-bottom: 1rem;
   background: var(--gradient-main);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -373,6 +389,19 @@ section {
   box-shadow: 0 0 15px var(--primary);
 }
 
+.progress-bar-react {
+  width: 85%;
+}
+.progress-bar-node {
+  width: 75%;
+}
+.progress-bar-ts {
+  width: 80%;
+}
+.progress-bar-mongo {
+  width: 70%;
+}
+
 /* Cards Grid */
 .skills-grid {
   display: grid;
@@ -382,6 +411,7 @@ section {
 
 .skill-card {
   background: var(--bg-card);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   padding: 2.5rem;
@@ -401,12 +431,14 @@ section {
   margin-bottom: 1.5rem;
   background: var(--gradient-main);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Contact Form */
 .contact-form {
   background: var(--bg-card);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
   padding: 3rem;
@@ -426,6 +458,11 @@ section {
   border-color: var(--primary);
   color: white;
   box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: var(--text-dim);
+  opacity: 1;
 }
 
 /* Footer */
@@ -457,7 +494,7 @@ section {
 /* Mobile Adjustments */
 @media (max-width: 768px) {
   section {
-    padding: 6rem 0;
+    padding: 3rem 0;
   }
   .hero-name {
     font-size: 3rem;
